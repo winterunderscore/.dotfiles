@@ -3,5 +3,5 @@ _default:
     @just --list
 
 [linux]
-hm type *args:
+hm type:
     home-manager {{type}} --flake "./hm"
