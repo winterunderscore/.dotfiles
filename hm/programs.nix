@@ -67,14 +67,19 @@
       enable = true;
     };
 
-    fish = {
+    bash = {
       enable = true;
+      enableCompletion = true;
       shellAliases = {
         ts = "tmux-sessionizer";
         ss = "spawn-shell";
         cat = "bat";
         ls = "eza -a";
       };
+    };
+    starship = {
+      enable = true;
+      enableBashIntegration = true;
     };
   };
 }
