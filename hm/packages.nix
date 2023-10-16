@@ -1,17 +1,15 @@
 {pkgs, lib, ...}: {
   home.packages = with pkgs; [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
     gh
-
-    hello
     vim
     
+    hyperfine
+    wiki-tui
+    ripgrep
     just
     eza
     bat
     fzf
-    hyperfine
     
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
