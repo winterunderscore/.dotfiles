@@ -7,7 +7,6 @@
     wiki-tui
     ripgrep
     just
-    eza
     bat
     fzf
     
@@ -18,6 +17,7 @@
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
     
     (callPackage ../scripts/tmux-sessionizer.nix {})
+    (callPackage ../scripts/nix-shell-wrapper.nix {})
     (callPackage ../scripts/spawn-shell.nix {})
   ];
 }
