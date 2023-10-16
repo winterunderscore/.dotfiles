@@ -5,7 +5,6 @@ let
     ts = "tmux-sessionizer";
     ss = "spawn-shell";
     cat = "bat";
-    test = "echo yay";
   };
 in {
   programs = {
