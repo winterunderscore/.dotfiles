@@ -1,4 +1,4 @@
-{...}: 
+{pkgs, ...}: 
 
 let
   shellAliases = {
@@ -17,6 +17,26 @@ in {
     fish = {
       enable = true;
       shellAliases = shellAliases;
+      plugins = [
+        {
+          name = "fzf";
+          src = pkgs.fetchFromGitHub {
+            owner = "PatrickF1";
+            repo = "fzf.fish";
+            rev = "8d99f0caa30a626369541f80848ffdbf28e96acc";
+            sha256 = "sha256-nTiFD8vWjafYE4HNemyoUr+4SgsqN3lIJlNX6IGk+aQ=";
+          };
+        } 
+        {
+          name = "z";
+          src = pkgs.fetchFromGitHub {
+            owner = "jethrokuan";
+            repo = "z";
+            rev = "85f863f20f24faf675827fb00f3a4e15c7838d76";
+            sha256 = "sha256-+FUBM7CodtZrYKqU542fQD+ZDGrd2438trKM0tIESs0=";
+          };
+        }
+      ];
     };
     starship = {
       enable = true;

@@ -3,12 +3,16 @@
     gh
     vim
     
+    nix-prefetch-github
+    nix-prefetch-git
+
     hyperfine
     wiki-tui
     ripgrep
     just
     bat
     fzf
+    fd
     
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

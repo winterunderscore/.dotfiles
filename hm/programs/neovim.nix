@@ -7,6 +7,9 @@
     vimdiffAlias = true;
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
+      vim-nix
+      vim-fugitive
+      leap-nvim
     ];
     extraLuaConfig = ''
       local o = vim.opt
