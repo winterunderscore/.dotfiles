@@ -1,7 +1,11 @@
-{...}: {
+{pkgs, ...}: {
   programs.tmux = {
     enable = true;
     clock24 = true;
+    plugins = with pkgs; [
+      tmuxPlugins.resurrect
+      tmuxPlugins.continuum
+    ];
     extraConfig = ''
       set -g default-terminal 'screen-256color'
 

@@ -2,7 +2,7 @@
   home.packages = with pkgs; [
     gh
     vim
-    
+
     nix-prefetch-github
     nix-prefetch-git
 
@@ -13,12 +13,18 @@
     bat
     fzf
     fd
-    
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+
+    #stuff u expect a *nix system to have
+
+    coreutils
+    bc
+    gawk
+    gnused
+    bash
+    bc
+    gnutar
+    man
+    texinfo
     
     (callPackage ../scripts/tmux-sessionizer.nix {})
     (callPackage ../scripts/nix-shell-wrapper.nix {})
