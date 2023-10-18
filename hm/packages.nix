@@ -25,9 +25,5 @@
     gnutar
     man
     texinfo
-    
-    (callPackage ../scripts/tmux-sessionizer.nix {})
-    (callPackage ../scripts/nix-shell-wrapper.nix {})
-    (callPackage ../scripts/spawn-shell.nix {})
   ];
 }

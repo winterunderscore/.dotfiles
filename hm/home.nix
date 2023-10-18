@@ -19,8 +19,9 @@
   # environment.
   
   imports = 
-    lib.filesystem.listFilesRecursive ./programs
+    lib.filesystem.listFilesRecursive ../programs
     ++ [
+    ../scripts
     ./packages.nix
   ];
 
