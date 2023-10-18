@@ -5,6 +5,11 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter.withAllGrammars
+      vim-fugitive
+      leap-nvim
+    ];
     extraLuaConfig = ''
       do
         local o = vim.opt
@@ -37,10 +42,5 @@
         --TODO: nothing yet lmao
       end
     '';
-    plugins = with pkgs.vimPlugins; [
-      nvim-treesitter.withAllGrammars
-      vim-fugitive
-      leap-nvim
-    ];
   };
 }

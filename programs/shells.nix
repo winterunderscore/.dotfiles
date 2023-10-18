@@ -50,6 +50,7 @@ in {
         };
         directory = {
           fish_style_pwd_dir_length = 2;
+          truncation_length = 2;
           truncate_to_repo = false;
         };
       };
