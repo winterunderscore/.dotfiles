@@ -26,7 +26,7 @@
           ["haskell"] = 2,
           ["nix"] = 2,
           ["lua"] = 4,
-          ["c"] = 8,
+          ["c"] = 4,
         }
         vim.api.nvim_create_autocmd("FileType", {
           pattern = "*",
